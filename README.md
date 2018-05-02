@@ -7,12 +7,23 @@
   - SCI : 대출 건수 / 대출 총 금액 / 대출계좌 유지 기간 / 보증 건수 / 보증 금액 등 14개 
 전체변수 총 69 개 , 관측치 102,252개
 TARGET의 반응비율(연체한 비율)이 4%대로 매우 낮음
-
 - 평가지표 : 예측값의 F1 score
 
 - 프로젝트 기간 : 2017.08 ~ 2017.10
 - 팀구성 : 1인 
-- 기술 및 인프라 : Rstudio ( SVM, Randomforest )
+
+- Process.
+1. 데이터 EDA
+2. 데이터 전처리  
+   1) 결측치 처리 : Decision Tree, Mice(multiple imputation)  
+   2) 금액 데이터 정규화 : log또는 sqrt변환
+3. DataPartition  
+   Train data : Validation data = 80 : 20  
+4. SVM, Randomforest 모델로 예측
+
+- 기술 및 인프라 : Rstudio ( Decision Tree, SVM, Randomforest )
+
+
 
 ![main](./img/image.png)
 
