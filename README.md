@@ -21,7 +21,7 @@ TARGET의 반응비율(연체한 비율)이 4%대로 매우 낮음
    Train data : Validation data = 80 : 20  
 4. SVM, Randomforest 모델로 예측
 
-- 기술 및 인프라 : Rstudio ( Decision Tree, SVM, Randomforest )
+- 사용언어 : R
 
 
 
